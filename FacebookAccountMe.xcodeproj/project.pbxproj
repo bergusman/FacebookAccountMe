@@ -17,7 +17,9 @@
 		440AFA16179D5F0000E7F266 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 440AFA15179D5F0000E7F266 /* Default@2x.png */; };
 		440AFA18179D5F0000E7F266 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 440AFA17179D5F0000E7F266 /* Default-568h@2x.png */; };
 		440AFA1B179D5F0000E7F266 /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440AFA1A179D5F0000E7F266 /* VBViewController.m */; };
-		440AFA1E179D5F0000E7F266 /* VBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440AFA1C179D5F0000E7F266 /* VBViewController.xib */; };
+		440AFA24179D5F0D00E7F266 /* VBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440AFA1C179D5F0000E7F266 /* VBViewController.xib */; };
+		440AFA26179D5FFE00E7F266 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440AFA25179D5FFE00E7F266 /* Social.framework */; };
+		440AFA28179D600F00E7F266 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440AFA27179D600F00E7F266 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		440AFA19179D5F0000E7F266 /* VBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
 		440AFA1A179D5F0000E7F266 /* VBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
 		440AFA1D179D5F0000E7F266 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VBViewController.xib; sourceTree = "<group>"; };
+		440AFA25179D5FFE00E7F266 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		440AFA27179D600F00E7F266 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440AFA28179D600F00E7F266 /* Accounts.framework in Frameworks */,
+				440AFA26179D5FFE00E7F266 /* Social.framework in Frameworks */,
 				440AFA02179D5F0000E7F266 /* UIKit.framework in Frameworks */,
 				440AFA04179D5F0000E7F266 /* Foundation.framework in Frameworks */,
 				440AFA06179D5F0000E7F266 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		440AFA00179D5F0000E7F266 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				440AFA27179D600F00E7F266 /* Accounts.framework */,
+				440AFA25179D5FFE00E7F266 /* Social.framework */,
 				440AFA01179D5F0000E7F266 /* UIKit.framework */,
 				440AFA03179D5F0000E7F266 /* Foundation.framework */,
 				440AFA05179D5F0000E7F266 /* CoreGraphics.framework */,
@@ -163,7 +171,7 @@
 				440AFA14179D5F0000E7F266 /* Default.png in Resources */,
 				440AFA16179D5F0000E7F266 /* Default@2x.png in Resources */,
 				440AFA18179D5F0000E7F266 /* Default-568h@2x.png in Resources */,
-				440AFA1E179D5F0000E7F266 /* VBViewController.xib in Resources */,
+				440AFA24179D5F0D00E7F266 /* VBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +269,12 @@
 		440AFA22179D5F0000E7F266 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vitaliy Berg (8247S34VCP)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookAccountMe/FacebookAccountMe-Prefix.pch";
 				INFOPLIST_FILE = "FacebookAccountMe/FacebookAccountMe-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0570A8C4-4CBA-4F00-87BF-D0C16CCE303E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
